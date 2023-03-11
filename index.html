@@ -1,6 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
+<head><!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .ok {background-color: rgb(153, 24, 168);}
+    .uk {background-color: rgb(8, 135, 17);}
+    @keyframes go{
+      0%{
+        left: 70px;
+      }
+      25%{
+        left: 320px;
+      }
+      50%{
+        left: 570px;
+      }
+      75%{
+        left: 820px;
+      }
+      100%{
+        left: 1070px;
+      }
+    }
+    @keyframes go1{
+      0%{
+        left: 190px;
+      }
+      25%{
+        left: 440px;
+      }
+      50%{
+        left: 690px;
+      }
+      75%{
+        left: 940px;
+      }
+      100%{
+        left: 1190px;
+      }
+    }
+    @keyframes go2{
+      0%{
+        left: 90px;
+      }
+      25%{
+        left: 340px;
+      }
+      50%{
+        left: 590px;
+      }
+      75%{
+        left: 840px;
+      }
+      100%{
+        left: 1090px;
+      }
+    }
+    @keyframes go3{
+      0%{
+        left: 170px;
+      }
+      25%{
+        left: 420px;
+      }
+      50%{
+        left: 670px;
+      }
+      75%{
+        left: 920px;
+      }
+      100%{
+        left: 1170px;
+      }
+    }
+    @keyframes go4{
+      0%{
+        left: 50px;
+      }
+      25%{
+        left: 300px;
+      }
+      50%{
+        left: 550px;
+      }
+      75%{
+        left: 800px;
+      }
+      100%{
+        left: 1050px;
+      }
+    }
+    @keyframes go5{
+      0%{
+        left: 110px;
+      }
+      25%{
+        left: 360px;
+      }
+      50%{
+        left: 610px;
+      }
+      75%{
+        left: 860px;
+      }
+      100%{
+        left: 1110px;
+      }
+    }
+    @keyframes go6{
+      0%{
+        left: 30px;
+      }
+      25%{
+        left: 280px;
+      }
+      50%{
+        left: 530px;
+      }
+      75%{
+        left: 780px;
+      }
+      100%{
+        left: 1030px;
+      }
+    }
+    @keyframes go7{
+      0%{
+        left: 230px;
+      }
+      25%{
+        left: 480px;
+        top: 110px;
+      }
+      50%{
+        left: 730px;
+        top: 150px;
+      }
+      75%{
+        left: 980px;
+        top: 110px;
+      }
+      100%{
+        left: 1230px;
+      }
+    }
+    @keyframes go8{
+      0%{
+        left: 150px;
+      }
+      25%{
+        left: 460px;
+        width: 20px;
+        
+      }
+      50%{
+        left: 650px;
+        width: 40px;
+      }
+      75%{
+        left: 960px;
+        width: 20px;
+      }
+      100%{
+        left: 1150px;
+      }
+    }
+    @keyframes go9{
+      0%{
+        left: 30px;
+      }
+      25%{
+        left: 280px;
+        top: 110px;
+      }
+      50%{
+        left: 530px;
+        top: 150px;
+      }
+      75%{
+        left: 780px;
+        top: 110px;
+      }
+      100%{
+        left: 1030px;
+      }
+    }
+    @keyframes go10{
+      0%{
+        left: 30px;
+      }
+      25%{
+        left: 280px;
+        top: 90px;
+      }
+      50%{
+        left: 530px;
+        top: 170px;
+      }
+      75%{
+        left: 780px;
+        top: 90px;
+      }
+      100%{
+        left: 1030px;
+      }
+    }
+    @keyframes go11{
+      0%{
+        left: 230px;
+      }
+      25%{
+        left: 480px;
+        top: 90px;
+      }
+      50%{
+        left: 730px;
+        top: 170px;
+      }
+      75%{
+        left: 980px;
+        top: 90px;
+      }
+      100%{
+        left: 1230px;
+      }
+    }
+    @keyframes go12{
+      0%{
+        left: 90px;
+      }
+      25%{
+        left: 300px;
+        width: 20px;
+      }
+      50%{
+        left: 590px;
+        width: 40px;
+      }
+      75%{
+        left: 800px;
+        width: 20px;
+      }
+      100%{
+        left: 1090px;
+      }
+    }
+    @keyframes went1{
+      0%{
+        left: 110px;
+      }
+      100%{
+        left: 1110px;
+      }
+    }
+    @keyframes went2{
+      0%{
+        left: 90px;
+      }
+      100%{
+        left: 1090px;
+      }
+    }
+    @keyframes went3{
+      0%{
+        left: 70px;
+      }
+      100%{
+        left: 1070px;
+      }
+    }
+    @keyframes went4{
+      0%{
+        left: 50px;
+      }
+      100%{
+        left: 1050px;
+      }
+    }
+    @keyframes went5{
+      0%{
+        left: 190px;
+      }
+      100%{
+        left: 1190px;
+      }
+    }
+    @keyframes went6{
+      0%{
+        left: 210px;
+      }
+      100%{
+        left: 1210px;
+      }
+    }
+    .go-go{
+      animation-name: go; 
+      animation-duration: 2s;
+      animation-timing-function: steps(3);
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .go-go1{
+      animation-name: go1; 
+      animation-duration: 2s;
+      animation-timing-function: steps(3);
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .go-go2{
+      animation-name: go2; 
+      animation-duration: 2s;
+      animation-timing-function: steps(3);
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .go-go3{
+      animation-name: go3; 
+      animation-duration: 2s;
+      animation-timing-function: steps(3);
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .go-go4{
+      animation-name: go4; 
+      animation-duration: 2s;
+      animation-timing-function: steps(3);
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .go-go5{
+      animation-name: go5; 
+      animation-duration: 2s;
+      animation-timing-function: steps(3);
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .go-go6{
+      animation-name: go6; 
+      animation-duration: 2s;
+      animation-timing-function: steps(3);
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .go-go7{
+      animation-name: go7; 
+      animation-duration: 2s;
+      animation-timing-function: steps(3);
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .go-go8{
+      animation-name: go8; 
+      animation-duration: 2s;
+      animation-timing-function: steps(3);
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .go-go9{
+      animation-name: go9; 
+      animation-duration: 2s;
+      animation-timing-function: steps(3);
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .go-go10{
+      animation-name: go10; 
+      animation-duration: 2s;
+      animation-timing-function: steps(3);
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .go-go11{
+      animation-name: go11; 
+      animation-duration: 2s;
+      animation-timing-function: steps(3);
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .go-go12{
+      animation-name: go12; 
+      animation-duration: 2s;
+      animation-timing-function: steps(3);
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .went1{
+      animation-name: went1; 
+      animation-duration: 2s;
+      animation-timing-function: steps(5);
+      animation-delay: 500ms;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .went2{
+      animation-name: went2; 
+      animation-duration: 2s;
+      animation-timing-function: steps(5);
+      animation-delay: 500ms;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .went3{
+      animation-name: went3; 
+      animation-duration: 2s;
+      animation-timing-function: steps(5);
+      animation-delay: 500ms;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .went4{
+      animation-name: went4; 
+      animation-duration: 2s;
+      animation-timing-function: steps(5);
+      animation-delay: 500ms;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .went5{
+      animation-name: went5; 
+      animation-duration: 2s;
+      animation-timing-function: steps(5);
+      animation-delay: 500ms;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    .went6{
+      animation-name: went6; 
+      animation-duration: 2s;
+      animation-timing-function: steps(5);
+      animation-delay: 500ms;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+  </style>
+</head>
+<body>
+  <div class="ok go-go" style="height: 20px; width: 20px; position: absolute; top: 50px; left: 70px;"></div>
+  <div class="ok go-go1" style="height: 20px; width: 20px; position: absolute; top: 50px; left: 190px;"></div> 
+  <div class="ok go-go2" style="height: 20px; width: 20px; position: absolute; top: 70px; left: 90px;"></div> 
+  <div class="ok go-go3" style="height: 20px; width: 20px; position: absolute; top: 70px; left: 170px;"></div>
+  <div class="ok go-go" style="height: 20px; width: 140px; position: absolute; top: 90px; left: 70px;"></div>
+  <div class="ok go-go4" style="height: 20px; width: 40px; position: absolute; top: 110px; left: 50px;"></div>
+  <div class="ok go-go1" style="height: 20px; width: 40px; position: absolute; top: 110px; left: 190px;"></div>
+  <div class="ok go-go5" style="height: 20px; width: 60px; position: absolute; top: 110px; left: 110px;"></div>
+  <div class="ok go-go6" style="height: 20px; width: 220px; position: absolute; top: 130px; left: 30px;"></div>
+  <div class="uk go-go9" style="height: 20px; width: 20px; position: absolute; top: 150px; left: 30px;" ></div>
+  <div class="uk go-go7" style="height: 20px; width: 20px; position: absolute; top: 150px; left: 230px;"></div> 
+  <div class="ok go-go" style="height: 20px; width: 140px; position: absolute; top: 150px; left: 70px;"></div>
+  <div class="uk go-go10" style="height: 20px; width: 20px; position: absolute; top: 170px; left: 30px;"></div>
+  <div class="ok go-go" style="height: 20px; width: 20px; position: absolute; top: 170px; left: 70px;"></div> 
+  <div class="uk go-go11" style="height: 20px; width: 20px; position: absolute; top: 170px; left: 230px;"></div> 
+  <div class="ok go-go1" style="height: 20px; width: 20px; position: absolute; top: 170px; left: 190px;"></div> 
+  <div class="uk go-go12" style="height: 20px; width: 40px; position: absolute; top: 190px; left: 90px;"></div> 
+  <div class="uk go-go8" style="height: 20px; width: 40px; position: absolute; top: 190px; left: 150px;"></div>
+    
+  <div class="uk went1" style="height: 20px; width: 60px; position: absolute; top: 250px; left: 110px;"></div>
+  <div class="uk went2" style="height: 20px; width: 100px; position: absolute; top: 270px; left: 90px;"></div>
+  <div class="uk went3" style="height: 20px; width: 140px; position: absolute; top: 290px; left: 70px;"></div>
+  <div class="uk went4" style="height: 20px; width: 40px; position: absolute; top: 310px; left: 50px;"></div>
+  <div class="uk went1" style="height: 20px; width: 60px; position: absolute; top: 310px; left: 110px;"></div>
+  <div class="uk went5" style="height: 20px; width: 40px; position: absolute; top: 310px; left: 190px;"></div>
+  <div class="uk went4" style="height: 20px; width: 180px; position: absolute; top: 330px; left: 50px;"></div>
+  <div class="uk went3" style="height: 20px; width: 20px; position: absolute; top: 350px; left: 70px;"></div>
+  <div class="uk went1" style="height: 20px; width: 60px; position: absolute; top: 350px; left: 110px;"></div>
+  <div class="uk went5" style="height: 20px; width: 20px; position: absolute; top: 350px; left: 190px;"></div>  
+  <div class="uk went6" style="height: 20px; width: 20px; position: absolute; top: 370px; left: 210px;"></div>
+  <div class="uk went4" style="height: 20px; width: 20px; position: absolute; top: 370px; left: 50px;"></div>
+  <div class="uk went3" style="height: 20px; width: 20px; position: absolute; top: 390px; left: 70px;"></div> 
+  <div class="uk went5" style="height: 20px; width: 20px; position: absolute; top: 390px; left: 190px;"></div>
+  
+  <div class="ok" style="height: 20px; width: 60px; position: absolute; top: 430px; left: 110px;"></div>
+  <div class="ok" style="height: 20px; width: 60px; position: absolute; top: 430px; left: 110px;"></div>
+  <div class="ok" style="height: 20px; width: 60px; position: absolute; top: 430px; left: 110px;"></div>
+  <div class="ok" style="height: 20px; width: 180px; position: absolute; top: 450px; left: 50px;"></div>
+  <div class="ok" style="height: 20px; width: 220px; position: absolute; top: 470px; left: 30px;"></div>
+  <div class="ok" style="height: 20px; width: 50px; position: absolute; top: 490px; left: 30px;"></div>
+  <div class="ok" style="height: 20px; width: 40px; position: absolute; top: 490px; left: 120px;"></div>
+  <div class="ok" style="height: 20px; width: 50px; position: absolute; top: 490px; left: 200px;"></div>
+  <div class="ok" style="height: 20px; width: 220px; position: absolute; top: 510px; left: 30px;"></div>
+  <div class="ok" style="height: 20px; width: 60px; position: absolute; top: 530px; left: 60px;"></div>
+  <div class="ok" style="height: 20px; width: 60px; position: absolute; top: 530px; left: 160px;"></div>
+  <div class="ok" style="height: 20px; width: 40px; position: absolute; top: 550px; left: 40px;"></div>
+  <div class="ok" style="height: 20px; width: 40px; position: absolute; top: 550px; left: 200px;"></div>
+  <div class="ok" style="height: 20px; width: 40px; position: absolute; top: 550px; left: 120px;"></div>
+  <div class="ok" style="height: 20px; width: 40px; position: absolute; top: 570px; left: 60px;"></div>
+  <div class="ok" style="height: 20px; width: 40px; position: absolute; top: 570px; left: 180px;"></div>
+  
+  <div class="uk" style="height: 30px; width: 10px; position: absolute; top: 630px; left: 135px;"></div>
+  <div class="uk" style="height: 20px; width: 50px; position: absolute; top: 660px; left: 115px;"></div>
+  <div class="uk" style="height: 10px; width: 200px; position: absolute; top: 680px; left: 40px;"></div>
+  <div class="uk" style="height: 60px; width: 220px; position: absolute; top: 690px; left: 30px;"></div>
+  
+</body>
+</html>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
